@@ -350,10 +350,13 @@ body{
 	    display: inline-block;
 	}
 	.four-block .col-sm-3{
-		padding-top: 30px !important;
-		padding-right: 32px !important;
+		padding-top: 38px !important;
 		padding-bottom: 50px !important;
-		padding-left: 32px !important;
+	}
+	.four-block .col-sm-3 p{
+		font-size: 14px;
+		line-height: 30px;
+		margin:0;
 	}
 	.banner-block {
 	    position: relative;
@@ -383,12 +386,16 @@ body{
 	cursor: pointer;
 }
 
-.four-block .col-sm-3 i{
-	font-size: 73px;
+.four-block img{
+	width: 62px;
+	margin: 0 auto;
+	display: block;
 }
 .four-block .col-sm-3 h3{
 	font-weight: 700;
-	font-size: 18px
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 16px;
 }
 .four-block {
     position: absolute;
@@ -397,6 +404,7 @@ body{
     margin: 0 auto;
     left: 0;
     right: 0;
+    text-align: center;
 }
 
 
@@ -406,35 +414,16 @@ body{
 		position: relative !important;
 		bottom: 0 !important;
 	}
-	.four-block .col-sm-3 {
-	    height: 120px !important;
-	}
 	.four-block .col-sm-3{
-		padding:20px 0 !important;
+		padding:50px 20px 0 !important;
 		text-align: center;
 	}
-	.four-block .col-sm-3 i {
-	    font-size: 50px !important;
+	.countDays{
+		display: none;
 	}
-	.four-block .col-sm-3 h3 {
-	    font-weight: 700 !important;
-	    font-size: 16px !important;
-	    margin: 10px 0;
+	.countDiv0{
+		display: none;
 	}
-	.four-block .col-sm-3 p {
-	    display: none !important;
-	}
-}
-.ani1{
-	line-height: 60px;
-	border-width: 0px;
-	margin: 0px;
-	padding: 0px;
-	letter-spacing: -1px;
-	font-weight: 700;
-	font-size: 48px;
-	color: #fdc735;
-	display: block;
 }
 .ani2{
 	line-height: 60px;
@@ -443,7 +432,7 @@ body{
 	padding: 0px;
 	letter-spacing: -1px;
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 40px;
 	color: #fff;
 	display: block;
 }
@@ -451,7 +440,7 @@ body{
 	background: rgba(0,0,0,0.2) !important;
 }
 .four-block .col-sm-3{
-	height: 300px;
+	height: 274px;
 	transition: all 0s;
 	-webkit-transition: all 0s;
 }
@@ -473,14 +462,33 @@ body{
 	}
 
 }
+@media (max-width:992px) { 
+	.footer{
+		position: relative !important;
+		height: auto !important;
+	}
+	body{
+		padding: 0 !important;
+	}
+	.footer .touch p span {
+	    width: 22px;
+	    display: none !important;
+	}
+	.footer .col-md-3{
+		padding-bottom: 40px !important;
+	}
+	.footer .link p{
+		margin-right: 0 !important;
+	}
 
+}
 /*旋转木马*/
 .block1-title{
 	margin-top: 30px;
 }
 @media (min-width: 768px){
 	.block1-title{
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 }
 @media (min-width: 500px) and(max-width:588px){
@@ -494,7 +502,7 @@ body{
 	}*/
 }
 .block1-title h2{
-	font-size: 32px;
+	font-size: 34px;
 	line-height: 48px;
 	text-align: center;
 	font-family: Montserrat;
@@ -555,6 +563,7 @@ body{
 	line-height: 40px;
 	text-align: center;
 	cursor: pointer;
+	font-size: 16px;
 }
 .swiper-slide-btn2{
 	position: absolute;
@@ -569,12 +578,20 @@ body{
 	width: 100%;
 	display: block;
 }
-.xz-middle .swiper-slide p{
-	height: 50px;
+.xz-middle .swiper-slide h3{
+	font-size: 16px;
+	margin-top: 18px;
+	margin-left: 12px;
 	text-align: left;
-	font-size: 18px;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin-bottom: 6px;
+	margin-right: 12px;
+}
+.xz-middle .swiper-slide p{
+	text-align: left;
+	font-size: 14px;
+	margin-left: 12px;
+	color: #646464;
+	margin-right: 12px;
 }
 .xz-middle .swiper-slide span{
 	display: block;
@@ -684,13 +701,14 @@ body{
     position: absolute;
     left: 74px;
 }
-.blog-block-con h1{
-	padding-right: 40px;
-	font-weight: 400;
-	word-spacing: -2px;
-	line-height: 24px;
-	text-decoration: none !important;
-	font-size: 22px;
+.blog-block-con h1 {
+    padding-right: 40px;
+    font-weight: 400;
+    word-spacing: -2px;
+    line-height: 24px;
+    text-decoration: none !important;
+    font-size: 16px;
+    margin-top: 26px;
 }
 
 .blog-block-date p span{
@@ -761,6 +779,10 @@ body{
 }
 .time .col-md-5 h1 span{
 	color: #000;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 28px;
+	display: block;
 }
 .time .col-md-5 p{
 	text-align: center;
@@ -769,6 +791,20 @@ body{
 }
 .time .col-md-5 form{
 	margin-top: 30px;
+}
+.time-form form input{
+	background: #eee;
+	height: 48px;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.time-form form button {
+    margin: 0 auto;
+    width: 134px;
+    height: 44px;
+    display: block;
+    border-radius: 0;
 }
 .time-form form {
     background: #fff;
@@ -823,14 +859,14 @@ body{
     bottom: 0px !important;
 }
 .footer{
-	background: #555;
+	background: #414b4f;
 	position: fixed;
 	z-index: 14;
 	bottom: 0;
 	height: 500px;
 	width: 100%;
 	padding: 63px 0 30px;
-	color: #ccc;
+	color: #fff;
 }
 .footer a{
 	color: inherit;
@@ -879,7 +915,7 @@ body{
 }
 .footer .link p{
 	padding: 5px 0;
-	
+	margin-right: 40px;
 	color: #eab830;
 	font-size: 14px;
 	letter-spacing: 0.7px;
@@ -890,4 +926,22 @@ body{
 .footer .link p span{
 	color: #fff;
 	margin-right: 4px;
+}
+.footer .touch p i{
+	font-size: 18px;
+	margin-right: 12px;
+	color: #aaa;
+}
+.footer .touch p{
+	padding-right: 24px;
+}
+.footer .touch p span{
+	width: 22px;
+	display: inline-block;
+}
+.footer-logo{
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	margin-right: 10px;
 }
