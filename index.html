@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/jquery.countdown.css" />
+	
+</head>
+<body>
+<div class="main">
+<!-- 顶部信息 -->
+<div class="header_top_bar">
+	<div class="container clearfix">
+		<div class="pull-right hidden-xs header_login_url">
+			<a href="#"><i class="fa fa-user"></i>登陆</a>
+			<span class="header_login_url-span"></span>
+			<a href="#">注册</a>
+		</div>
+		<div class="pull-right header_top_bar-link">
+			<a href="#"><i class="fa fa-wechat"></i></a>
+			<a href="#"><i class="fa fa-weibo"></i></a>
+			<a href="#"  class="hidden-xs"><i class="fa fa-tencent-weibo"></i></a>
+			<a href="#" class="hidden-xs"><i class="fa fa-renren"></i></a>
+			<a href="#"><i class="fa fa-qq"></i></a>
+		</div>
+		<div class="header_top_bar-info pull-right hidden-xs">
+			<ul class="clearfix">
+				<li><i class="fa fa-phone"></i> +86 86-150-888</li>
+				<li><i class="fa fa-map-marker"></i>中国深圳市南山区前海科技园腾讯大厦A039</li>
+				<li class="visible-lg-inline-block"><i class="fa fa-clock-o"></i>周一至周六 8.00 - 18.00</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 导航+logo -->
+<div class="header_default" id="header_default">	
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="container-fluid">
+		    <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse"
+		                data-target="#example-navbar-collapse">
+		            <span class="sr-only">切换导航</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+		        <a class="navbar-brand" href="#">
+		        	<img class="hidden-xs" src="images/logo.png" alt="">
+		        	<img class="visible-xs-inline-block" src="images/logo-colored.png" alt="">
+		        </a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+		        <ul class="nav navbar-nav">
+		            <li class="active dropdown">
+		           	    <span class="triangle-up"></span>
+		            	<a href="#">首页</a>
+		            	<div class="dropdown-menu magic_line">
+		            	</div>
+		            </li>
+		            <li class="dropdown">
+		            <span class="triangle-up"></span>
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务</a>
+		                <ul class="dropdown-menu magic_line">			                
+		                    <li><a href="#">jmeter</a></li>
+		                    <li><a href="#">EJB</a></li>
+		                    <li><a href="#">Jasper Report</a></li>
+		                    <li class="divider"></li>
+		                    <li><a href="#">分离的链接</a></li>
+		                    <li class="divider"></li>
+		                    <li><a href="#">另一个分离的链接</a></li>
+		                </ul>
+		            </li>
+		            <li class="dropdown">
+		          	  <span class="triangle-up"></span>
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">案例</a>
+			            <div class="dropdown-menu magic_line">
+			            </div>
+		            </li>
+                    <li class="dropdown">
+        	            <span class="triangle-up"></span>
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">简介</a>
+        	            <div class="dropdown-menu magic_line">
+        	            </div>
+                    </li>
+                    <li class="dropdown">
+        	            <span class="triangle-up"></span>
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">联络</a>
+        	            <div class="dropdown-menu magic_line">
+        	            </div>
+                    </li>
+		            <button  type="submit" class="show-search-btn btn btn-default hidden-xs"><i class="fa fa-search"></i></button>
+		            <form class="navbar-form navbar-left row  visible-xs-inline-block" role="search">
+		                <div class="form-group col-xs-10">
+		                    <input type="text" class="form-control" placeholder="...">
+		                </div>
+		                <button  type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+		            </form>
+		        </ul>
+		    </div>
+	    </div>
+	</nav>
+</div>
+<div class="search-show hidden-xs" style="display:none">
+	<form class="navbar-form navbar-left row" role="search">
+	    <div class="form-group">
+	        <input type="text" class="form-control" placeholder="请输入搜索内容">
+	    </div>
+	    <button  type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+	</form>
+</div>
+<div class="banner-block">
+	<!-- 轮播 -->
+	<div class="tp-banner-container" style="overflow: hidden">
+	    <div class="tp-banner" >
+	        <ul>
+	            <!-- SLIDE  -->
+	            <li  data-transition="slotzoom-horizontal" data-slotamount="14">
+	                <!-- MAIN IMAGE -->
+	                <img src="images/index.jpg" alt="Rev Full">
+                    <div class="caption sfb" data-x="693" data-y="75" data-speed="700" data-start="0"data-easing="easeOutBack">
+                        <img src="images/mobile.png" alt=""/>
+                    </div>
+                    <div class="tp-caption slider-text-title sft str" data-x="20" data-y="150" data-speed="300" data-start="800" data-easing="easeOutCubic" data-end="6000" data-endspeed="500" style="font-size:24px">标题1</div>
+                    <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="200" data-start="1000" data-easing="easeOutBack" data-end="4500" data-endspeed="500">
+                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br /> 
+                        lorem quis bibendum auctor, nisi elit consequat ipsum, nec <br />
+                        sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                    </div>
+                    <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="280" data-start="1500" data-easing="easeOutBack" data-end="5000" data-endspeed="500">
+                        <a href="#" class="button btn-flat">More Info</a>
+                    </div>   
+	            </li>
+	            <!-- SLIDE  -->
+	            <li  data-transition="slotzoom-vertical" style="position:relative">
+	                <!-- MAIN IMAGE -->
+	                <img src="images/index3.jpg" alt="Rev Full">
+                    <div class="tp-caption slider-text-title sft str" data-x="20" data-y="180" data-speed="1000" data-start="800" data-easing="easeInCubic" data-end="6000" data-endspeed="700">
+                    <span class="ani1">执着于持续盈利的网站</span>
+                    <span class="ani2">TO KNOWLEDGE WITH US </span>
+                    </div>
+                    <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="400" data-start="1000" data-easing="easeOutBack" data-end="4500" data-endspeed="500">
+                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br /> 
+                        lorem quis bibendum auctor, nisi elit consequat ipsum, nec <br />
+                        sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                    </div>
+                    <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="480" data-start="1500" data-easing="easeOutBack" data-end="5000" data-endspeed="500">
+                        <a href="#" class="button btn-flat">More Info</a>
+                    </div>   
+	            </li>
+	            <!-- SLIDE  -->
+	            <li data-transition="boxslide" data-slotamount="7" data-masterspeed="300" >
+	                <!-- MAIN IMAGE -->
+	                <img src="images/index2.jpg"  alt="darkblurbg"   data-fullwidthcentering="on">
+	                    <!-- LAYERS -->
+	                    <div class="tp-caption lft stb stl"
+	                         data-x="650"
+	                         data-y="93"
+	                         data-speed="500"
+	                         data-start="500"
+	                         data-easing="easeOutExpo" data-end="6000" data-endspeed="500"><img src="images/imac.png" alt="Image 1"></div>
+	                    <div class="tp-caption lfb stb stl"
+	                         data-x="616"
+	                         data-y="194"
+	                         data-speed="500"
+	                         data-start="700"
+	                         data-easing="easeOutExpo" data-end="6000" data-endspeed="500"><img src="images/ipad.png" alt="Image 1"></div>
+
+	                    <div class="tp-caption lfr stb stl"
+	                         data-x="751"
+	                         data-y="290"
+	                         data-speed="1000"
+	                         data-start="1000"
+	                         data-easing="easeOutExpo" data-end="6000" data-endspeed="500"><img src="images/iphone.png" alt="Image 1"></div>
+
+	                    <div class="tp-caption slider-text-title sft str"
+	                         data-x="20"
+	                         data-y="150"
+	                         data-speed="300"
+	                         data-start="800"
+	                         data-easing="easeOutCubic" data-end="6000" data-endspeed="500" style="font-size:24px">标题2</div>
+
+
+	                    <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="200" data-start="1000" data-easing="easeOutBack" data-end="4500" data-endspeed="500">
+	                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br /> 
+	                        lorem quis bibendum auctor, nisi elit consequat ipsum, nec <br />
+	                        sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+	                    </div>
+	                    <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="280" data-start="1500" data-easing="easeOutBack" data-end="5000" data-endspeed="500">
+	                        <a href="#" class="button btn-flat">More Info</a>
+	                    </div>  
+	            </li>
+	        </ul>
+	        <div class="tp-bannertimer"></div>
+	    </div>
+	</div>
+	<!-- 四个方块 -->
+	<div class="container four-block">
+		<div class="row">
+			<div class="col-sm-3 col-xs-3 four-block-con1">
+				<i class="fa fa-trophy"></i>
+				<h3>趋势学科</h3>
+				<p>经过我们的课程培训后，在你的职业生涯中你将有机会成为该行业的成功专家。</p>
+			</div>
+			<div class="col-sm-3 col-xs-3 four-block-con2">
+				<i class="fa fa-trophy"></i>
+				<h3>趋势学科</h3>
+				<p>经过我们的课程培训后，在你的职业生涯中你将有机会成为该行业的成功专家。</p>
+			</div>
+			<div class="col-sm-3 col-xs-3 four-block-con3">
+				<i class="fa fa-trophy"></i>
+				<h3>趋势学科</h3>
+				<p>经过我们的课程培训后，在你的职业生涯中你将有机会成为该行业的成功专家。</p>
+			</div>
+			<div class="col-sm-3 col-xs-3 four-block-con4">
+				<i class="fa fa-trophy"></i>
+				<h3>趋势学科</h3>
+				<p>经过我们的课程培训后，在你的职业生涯中你将有机会成为该行业的成功专家。</p>
+			</div>
+		</div>
+</div>
+</div>
+<!-- 旋转木马 -->
+<div class="container">
+	<div class="row">
+		<div class="block1-title">
+			<h2>热门课程<span></span></h2>
+		</div>
+	</div>
+
+</div>
+	<!-- Swiper -->
+<div class="xz-middle-all container">
+	<div class="row">
+		<div class="swiper-container xz-middle">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<div class="swiper-slide-con">
+			        	<img src="images/xz.jpg" alt="">
+			        	<p>热门课程热门课程</p>
+			        	<span class="clearfix"><i class="fa fa-comment"></i>0<i class="fa fa-user"></i>1</span>
+			        	<div class="swiper-slide-btn">查看详情</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+                	<div class="swiper-slide-con">
+        	        	<img src="images/xz.jpg" alt="">
+        	        	<p>热门课程热门课程</p>
+        	        	<span class="clearfix"><i class="fa fa-comment"></i>0<i class="fa fa-user"></i>1</span>
+        	        	<div class="swiper-slide-btn">查看详情</div>
+        	        	<div class="swiper-slide-btn2"></div>
+                	</div>
+		        </div>
+		        <div class="swiper-slide">
+                	<div class="swiper-slide-con">
+        	        	<img src="images/xz.jpg" alt="">
+        	        	<p>热门课程热门课程</p>
+        	        	<span class="clearfix"><i class="fa fa-comment"></i>0<i class="fa fa-user"></i>1</span>
+        	        	<div class="swiper-slide-btn">查看详情</div>
+                	</div>
+		        </div>
+		        <div class="swiper-slide">
+                	<div class="swiper-slide-con">
+        	        	<img src="images/xz.jpg" alt="">
+        	        	<p>热门课程热门课程</p>
+        	        	<span class="clearfix"><i class="fa fa-comment"></i>0<i class="fa fa-user"></i>1</span>
+        	        	<div class="swiper-slide-btn">查看详情</div>
+                	</div>
+		        </div>
+		        <div class="swiper-slide">
+                	<div class="swiper-slide-con">
+        	        	<img src="images/xz.jpg" alt="">
+        	        	<p>热门课程热门课程</p>
+        	        	<span class="clearfix"><i class="fa fa-comment"></i>0<i class="fa fa-user"></i>1</span>
+        	        	<div class="swiper-slide-btn">查看详情</div>
+                	</div>
+		        </div>
+		        <div class="swiper-slide">
+                	<div class="swiper-slide-con">
+        	        	<img src="images/xz.jpg" alt="">
+        	        	<p>热门课程热门课程</p>
+        	        	<span class="clearfix"><i class="fa fa-comment"></i>0<i class="fa fa-user"></i>1</span>
+        	        	<div class="swiper-slide-btn">查看详情</div>
+                	</div>
+		        </div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>
+<div class="fight visible-lg-block">
+	<div class="container">
+		<div class="row">
+			<div class="block1-title">
+				<h2>我们一直在努力！<span></span></h2>
+				<p>在这里你可以查看我们培训中心的教育资源统计</p>
+			</div>
+			<div class="wrapper">
+			    <div class="counter col-sm-3">
+			      <i class="fa fa-globe fa-2x"></i>
+			      <h2 class="timer count-title" id="count-number" data-from="1" data-to="8" data-speed="1000"></h2>
+			       <p class="count-text ">正邦网站</p>
+			    </div>
+
+			    <div class="counter col-sm-3">
+			      <i class="fa fa-bell-o fa-2x"></i>
+			      <h2 class="timer count-title" id="count-number" data-from="4"  data-to="30" data-speed="1000"></h2>
+			      <p class="count-text ">正邦网站</p>
+			    </div>
+
+			    <div class="counter col-sm-3">
+			      <i class="fa fa-user-plus fa-2x"></i>
+			      <h2 class="timer count-title" id="count-number"  data-from="2"  data-to="50" data-speed="1000"></h2>
+			      <p class="count-text ">正邦网站</p>
+			    </div>
+
+			    <div class="counter col-sm-3 end">
+			      <i class="fa fa-briefcase fa-2x"></i>
+			      <h2 class="timer count-title" id="count-number"  data-from="133"  data-to="1000" data-speed="1000"></h2>
+			      <p class="count-text ">正邦网站</p>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="blog">
+	<div class="container">
+		<div class="row">
+			<div class="block1-title">
+				<h2>我们的博客<span></span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="blog-block">
+					<div class="blog-block-img">
+						<img src="images/dreamstime.jpg" alt="">
+					</div>
+					<div class="blog-block-txt">
+						<div class="blog-block-date">
+							<p><span>27</span>2月</p>
+							<span>1<i class="fa fa-comment"></i></span>
+						</div>
+						<div class="blog-block-con">
+							<h1>客户案例</h1>
+							<p>关于创客云 2016年2月27日 文章来自： admin 分类： 公司动态, 新闻资讯, 一条评论 创客云数字</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="blog-block">
+					<div class="blog-block-img">
+						<img src="images/dreamstime.jpg" alt="">
+					</div>
+					<div class="blog-block-txt">
+						<div class="blog-block-date">
+							<p><span>27</span>2月</p>
+							<span>1<i class="fa fa-comment"></i></span>
+						</div>
+						<div class="blog-block-con">
+							<h1>客户案例</h1>
+							<p>关于创客云 2016年2月27日 文章来自： admin 分类： 公司动态, 新闻资讯, 一条评论 创客云数字</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="blog-block">
+					<div class="blog-block-img">
+						<img src="images/dreamstime.jpg" alt="">
+					</div>
+					<div class="blog-block-txt">
+						<div class="blog-block-date">
+							<p><span>27</span>2月</p>
+							<span>1<i class="fa fa-comment"></i></span>
+						</div>
+						<div class="blog-block-con">
+							<h1>客户案例</h1>
+							<p>关于创客云 2016年2月27日 文章来自： admin 分类： 公司动态, 新闻资讯, 一条评论 创客云数字</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="learn">
+	<div class="container">
+		<div class="row">
+			<div class="block1-title">
+				<h2>在这你可以获得<span></span></h2>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="learn-con" style="background:#1E73BE;">
+					<i class="fa fa-cc-discover"></i>
+					<p>更多的流量</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="learn-con" style="background:#DD3333;">
+					<i class="fa fa-leanpub"></i>
+					<p>更多的询盘</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="learn-con" style="background:#B520C9;">
+					<i class="fa fa-barcode"></i>
+					<p>更多的成交</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="learn-con" style="background:#17A554;">
+					<i class="fa fa-cc-mastercard"></i>
+					<p>更多的流量</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="time container">
+	<div class="row">
+		<div class="col-md-5 col-md-offset-1"  style="margin-top:50px;">
+			<h1>免费获得国内专业培训老师</h1>
+			<h1><span>一对一</span>咨询服务</h1>
+			<p>抓紧时间，所剩机会已经不多了！</p>
+			<div id="countdown"></div>
+		</div>
+		<div class="col-md-5 col-md-offset-1 time-form">
+			<form role="form">
+			<h1><span>提交在线报名</span></h1>
+
+			  <div class="form-group">
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+			  </div>
+			  <div class="form-group">
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <button type="submit" class="btn btn-block">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Swiper -->
+<div class="container comments">
+	<div class="row">
+		<h1>客户见证</h1>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<div class="comments-img clearfix">
+		        		<img src="images/team.jpg" alt="">
+		        		<h4>立达驾校<span></span></h4>
+		        	</div>
+		        	<div class="comments-txt">
+		        		<p>创客云数字市场是一个主题模板/创意作品/数字交易平台，欢迎全球顶级设计师加入，你可以出售最优秀的网页模板和平面设计作品！目前本站不收取任何佣金，只收取提现转账手续费2%！本站全部主题模板为100%正品模板，支持更新升级！如有任何问题，请在论坛发帖或是联系在线客服！</p>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="comments-img clearfix">
+		        		<img src="images/team.jpg" alt="">
+		        		<h4>立达驾校<span></span></h4>
+		        	</div>
+		        	<div class="comments-txt">
+		        		<p>创客云数字市场是一个主题模板/创意作品/数字交易平台，欢迎全球顶级设计师加入，你可以出售最优秀的网页模板和平面设计作品！目前本站不收取任何佣金，只收取提现转账手续费2%！本站全部主题模板为100%正品模板，支持更新升级！如有任何问题，请在论坛发帖或是联系在线客服！</p>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="comments-img clearfix">
+		        		<img src="images/team.jpg" alt="">
+		        		<h4>立达驾校<span></span></h4>
+		        	</div>
+		        	<div class="comments-txt">
+		        		<p>创客云数字市场是一个主题模板/创意作品/数字交易平台，欢迎全球顶级设计师加入，你可以出售最优秀的网页模板和平面设计作品！目前本站不收取任何佣金，只收取提现转账手续费2%！本站全部主题模板为100%正品模板，支持更新升级！如有任何问题，请在论坛发帖或是联系在线客服！</p>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="comments-img clearfix">
+		        		<img src="images/team.jpg" alt="">
+		        		<h4>立达驾校<span></span></h4>
+		        	</div>
+		        	<div class="comments-txt">
+		        		<p>创客云数字市场是一个主题模板/创意作品/数字交易平台，欢迎全球顶级设计师加入，你可以出售最优秀的网页模板和平面设计作品！目前本站不收取任何佣金，只收取提现转账手续费2%！本站全部主题模板为100%正品模板，支持更新升级！如有任何问题，请在论坛发帖或是联系在线客服！</p>
+		        	</div>
+		        </div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="footer clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="about col-md-3">
+				<h3>关于正邦</h3>
+				<p>创客云数字市场是一个主题模板/创意作品/数字交易平台，欢迎全球顶级设计师加入，你可以出售最优秀的网页模板和平面设计作品！目前本站不收取任何佣金，只收取提现转账手续费2%！本站全部主题模板为100%正品模板，支持更新升级！如有任何问题，请在论坛发帖或是联系在线客服！</p>
+				<a href="#" class="btn btn-default">专家咨询</a>
+			</div>
+			<div class="link col-md-3">
+				<h3>关于正邦</h3>
+				<a href="#"><p>><span>全部服务></span></p></a>
+				<a href="#"><p>><span>全部服务></span></p></a>
+				<a href="#"><p>><span>全部服务></span></p></a>
+				<a href="#"><p>><span>全部服务></span></p></a>
+				<a href="#"><p>><span>全部服务></span></p></a>
+			</div>
+			<div class="touch col-md-3">
+				<h3>关于正邦</h3>
+			</div>
+			<div class="ewm col-md-3">
+				<img src="images/" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/style.js"></script>	
+<!-- jQuery REVOLUTION Slider  -->
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>
