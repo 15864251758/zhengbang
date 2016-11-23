@@ -736,8 +736,7 @@ body{
 }
 .learn{
 	background: #414b4f;
-	padding-top: 30px !important;
-	padding-bottom: 55px !important;
+	padding-bottom: 85px !important;
 }
 .learn .learn-con i{
 	display: block;
@@ -944,4 +943,95 @@ body{
 	height: 40px;
 	vertical-align: middle;
 	margin-right: 10px;
+}
+.banner-yx{
+	height: auto !important;
+}
+.yx-problem{
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+.yx-problem h1{
+	font-size: 34px;
+	text-align: center;
+	font-weight: normal;
+}
+.yx-problem img{
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 40px;
+}
+.yx-problem .col-md-3 img{
+	width: 60px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding-bottom: 0 !important;
+}
+.yx-problem .col-md-3 p{
+	line-height: 30px;
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
+.yx-problem .col-md-3 div{
+	padding: 40px 38px 0;
+	height: 234px;
+}
+.yx-problem1{
+	background: #34495e;
+}
+.yx-problem2{
+	background: #19bd9b;
+}
+.yx-problem3{
+	background: #ea5d4c;
+}
+.yx-problem4{
+	background: #ebae2a;
+}
+.yx-can{
+	padding: 0 40px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 44px 0;
+}
+.yx-can-img{
+	width: 84px;
+	height: 84px;
+	text-align: center;
+	line-height: 84px;
+	border-radius: 8px;
+	background: #bbb;
+	margin: 0 auto;
+	margin-bottom: 14px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	cursor: pointer;
+}
+.yx-can-img:hover{
+	background: #eab830;
+}
+.yx-lj{
+	text-align: center;
+	position: relative;
+}
+.yx-l-1{
+	position: absolute;
+	width: 118px;
+}
+.yx-lj img{
+	margin-bottom: 40px;
+	width: 80%;
+	max-width: 180px;
+}
+@media (max-width: 768px){
+	.yx-problem img{
+		width: 80%;
+	}
+}
+@media (min-width: 1200px){
+
 }
