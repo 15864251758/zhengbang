@@ -2,7 +2,7 @@ $(function(){
 	$('.show-search-btn').click(function(){
 		$('.search-show').fadeIn();
 	})
-	var wh=$(window).height();
+	var wh=$('body').height();
 	$('.search-show').css("height",wh)
 	$('.search-show').click(function(){
 		$('.search-show').fadeOut();
@@ -13,30 +13,19 @@ $(function(){
 	$('.tp-banner').css("height","100%");
 
 
-	<!-- 轮播 -->
-    $(function() {
-        jQuery('.tp-banner').revolution({
-            delay: 9000,
-            startwidth: 1170,
-            startheight: 600,
-            hideThumbs: 30,
-            fullWidth: "on",
-            forceFullWidth: "on",
-            navigationType:"none",
-        });
+	//轮播 
+    jQuery('.tp-banner').revolution({
+        delay: 9000,
+        startwidth: 1170,
+        startheight: 600,
+        hideThumbs: 30,
+        fullWidth: "on",
+        forceFullWidth: "on",
+        navigationType:"none",
     });
 	// 导航条
 	var bw=$(window).width();
 	if(bw>=768){
-		// $('.header_default li.dropdown').hover(function(){
-		// 	$(this).find('.magic_line').show();
-		// 	$(this).find('.triangle-up').show();
-
-		// },function(){
-		// 	$(this).find('.magic_line').hide();
-		// 	$(this).find('.triangle-up').hide();
-		// });
-
 
      //判断导航栏是否在原来位置上的标志，初始为false
     var test = false;
@@ -72,7 +61,24 @@ $(function(){
         }   
     });
 
+    //快速见效系统
 
+    $('.fast-box').hover(function(){
+    	    var img1=$(this).find('.fast-block1 img').attr("src");
+    		var imgNew=img1.substring(0,img1.length-4);
+    		var img2=imgNew+'-2.png';
+    	$(this).find('.fast-block1-txt').stop().slideDown();
+    	$('.fast-block1-circle').stop().fadeOut();
+    	$(this).find('.fast-block1 img').attr("src",img2);
+
+    },function(){
+    	     var img1=$(this).find('.fast-block1 img').attr("src");
+    	     var imgNew=img1.substring(0,img1.length-6);
+    		 var img2=imgNew+'.png';
+    	$('.fast-block1-circle').stop().fadeIn();
+    	$(this).find('.fast-block1-txt').stop().slideUp();
+    	$(this).find('.fast-block1 img').attr("src",img2);
+    })
 
 
 
@@ -114,9 +120,18 @@ $(function(){
     	});
     })
 
+    //about
+        jQuery('.tp-banner1').revolution({
+            delay: 9000,
+            startwidth: 1170,
+            startheight: 800,
+            hideThumbs: 30,
+            fullWidth: "on",
+            forceFullWidth: "on",
+            navigationType:"none",
+        });
+
 })
-
-
 
 	$(window).scroll(function(){
 		var numt=$('.fight').offset().top;
