@@ -765,6 +765,12 @@ body{
 	padding: 34px 15px 27px 15px;
 	position: relative;
 	cursor: pointer;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+.learn .learn-con:hover{
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
 }
 .time{
 	background: #eab830;
@@ -1300,6 +1306,95 @@ body{
 	margin-left: 16px;
 	margin-right: 4px;
 }
+.article{
+	margin-top: 220px;
+	padding-bottom: 300px;
+	min-height: 300px;
+}
+.article h3{
+	margin-top: 70px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.swiper-slide-con img{
+	width: 100%;
+}
+.news{
+	margin-top: 220px;
+	margin-bottom: 100px;
+}
+.news p{
+	font-size: 16px;
+	line-height: 30px;
+	color: #6a6a6a;
+	margin-top: 26px;
+}
+.news a{
+	color: inherit;
+}
+.news .jumbotron{
+	padding-top: 120px;
+	position: relative;
+	margin-top: 30px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	cursor: pointer;
+}
+.news .jumbotron:hover{
+	color: #fff;
+	background: #000;
+}
+.news .jumbotron:hover .news-time{
+	background: #cc0001;
+	color: #fff !important;
+}
+.news .jumbotron:hover p{
+	color: #fff !important;
+}
+.news .news-time{
+	background: #000;
+	width: 96px;
+	height: 110px;
+	position: absolute;
+	top: -16px;
+	color: #fff;
+	text-align: right;
+	padding: 0 10px;
+	color: #bababa;
+}
+.news .news-time h3{
+	margin-top: 40px;
+	color: #fff;
+}
+.pro-infos{
+	margin-top: 220px;
+	margin-bottom: 220px;
+}
+.pro-infos a{
+	color: inherit;
+}
+.pro-infos p{
+	line-height: 24px;
+}
+.pro-infos h4{
+	margin-bottom: 30px;
+}
+.pro-infos .col-md-3{
+	padding-bottom: 50px;
+	border-bottom: 1px dashed #ccc; 
+}
+.pro-infos img{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #eab830 !important;
+    text-decoration: none;
+    background-color: #fff;
+}
+.header_default .navbar-nav li .magic_line a{
+	padding-bottom: 6px;
+}
 @media (max-width: 768px){
 	.header_default{
 		background: #fff !important;
@@ -1310,14 +1405,20 @@ body{
 	.contact-title img{
 		padding-top: 60px;
 	}
-}
-.article{
-	margin-top: 220px;
-	padding-bottom: 300px;
-	min-height: 300px;
-}
-.article h3{
-	margin-top: 70px;
-	margin-bottom: 100px;
-	text-align: center;
+	.xz-middle-all1{
+		margin-top: 60px;
+	}
+	.article{
+		margin-top: 60px;
+	}
+	.news{
+		margin-top: 60px;
+	}
+	.pro-infos{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	.time .col-md-5 h1 span{
+		font-size: 24px;
+	}
 }

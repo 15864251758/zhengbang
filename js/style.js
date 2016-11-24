@@ -1,4 +1,5 @@
 $(function(){
+	//搜索框
 	$('.show-search-btn').click(function(){
 		$('.search-show').fadeIn();
 	})
@@ -12,7 +13,9 @@ $(function(){
 	});
 	$('.tp-banner').css("height","100%");
 
-
+	$(".header_default .magic_line").hover(function(event){
+	  event.stopPropagation();
+	});
 	//轮播 
     jQuery('.tp-banner').revolution({
         delay: 9000,
@@ -26,6 +29,7 @@ $(function(){
 	// 导航条
 	var bw=$(window).width();
 	if(bw>=768){
+
 
      //判断导航栏是否在原来位置上的标志，初始为false
     var test = false;
@@ -49,6 +53,9 @@ $(function(){
         		temp.appendChild(stayPos);
         		test=true;
     		}
+    		$(".header_default .magic_line").hover(function(event){
+    		  event.stopPropagation();
+    		});
         }else{
             //如果回到导航条原位置之前则替换回原来的类名
             $('.header_default').removeClass('fixer');
