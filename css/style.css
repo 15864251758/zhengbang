@@ -1575,4 +1575,11 @@ body{
 	.contact-title img{
 		width: 150px;
 	}
+	.block1-title h2 span {
+	    bottom: -10px;
+	}
+	.footer hr{
+		margin-top: 10px !important;
+		margin-bottom: 20px !important;
+	}
 }
