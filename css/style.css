@@ -26,10 +26,10 @@ body{
     top: 0;
     background: rgba(0,0,0,0.1);
     z-index: -1;
-    -webkit-transition: all 0.25s cubic-bezier(.66,.36,.17,.91);
-    -moz-transition: all 0.25s cubic-bezier(.66,.36,.17,.91);
-    -o-transition: all 0.25s cubic-bezier(.66,.36,.17,.91);
-    transition: all 0.25s cubic-bezier(.66,.36,.17,.91);
+    -webkit-transition: all 0.65s cubic-bezier(.66,.36,.17,.91);
+    -moz-transition: all 0.65s cubic-bezier(.66,.36,.17,.91);
+    -o-transition: all 0.65s cubic-bezier(.66,.36,.17,.91);
+    transition: all 0.65s cubic-bezier(.66,.36,.17,.91);
 }
 .blue:hover::after{
 	z-index: 10;
@@ -263,6 +263,7 @@ body{
 	}
 	.header_default .dropdown li a{
 		color: #fff;
+		font-size: 13px;
 	}
 	.header_default .dropdown .active a{
 		background: none;
@@ -362,7 +363,7 @@ body{
 		padding-top: 10px;
 		padding-bottom: 10px;
 		color: #333;
-		background: #fff;
+		background: #fff !important;
 		box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
 	}
 	.fixer a{
@@ -376,7 +377,7 @@ body{
 	    display: inline-block;
 	    border-top: 3px solid #eab830;
 	    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-	    background: rgba(255,255,255,0.8);
+	    background: rgba(255,255,255,1);
 	}
 	.magic_line.dropdown-menu a{
 		color: inherit;
@@ -1084,15 +1085,15 @@ body{
 	text-align: center;
 	line-height: 84px;
 	border-radius: 8px;
-	background: #bbb;
+	background: #eab830;
 	margin: 0 auto;
 	margin-bottom: 14px;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	cursor: pointer;
 }
-.yx-can-img:hover{
-	background: #eab830;
+.yx-can-img:hover{ 
+	background: #10C45C;
 }
 .yx-lj{
 	text-align: center;
@@ -1404,23 +1405,24 @@ body{
 	padding-top: 120px;
 	position: relative;
 	margin-top: 30px;
-	transition: all 0.3s;
-	-webkit-transition: all 0.3s;
+
 	cursor: pointer;
 }
-.news .jumbotron:hover{
+/*.news .jumbotron:hover{
 	color: #fff;
 	background: #000;
-}
+}*/
 .news .jumbotron:hover .news-time{
-	background: #cc0001;
+	background: #10C45C;
 	color: #fff !important;
 }
-.news .jumbotron:hover p{
+/*.news .jumbotron:hover p{
 	color: #fff !important;
-}
+}*/
 .news .news-time{
-	background: #000;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	background:#307AD5;
 	width: 96px;
 	height: 110px;
 	position: absolute;
@@ -1581,5 +1583,8 @@ body{
 	.footer hr{
 		margin-top: 10px !important;
 		margin-bottom: 20px !important;
+	}
+	.countdownHolder{
+		width: 320px !important;
 	}
 }
